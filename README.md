@@ -1,8 +1,35 @@
 # Ember-spark-line
 
-An Ember Addon containing components for rendering spark line charts.
+An Ember Addon containing components for rendering sparkline charts.
 
-## Installation
+"A sparkline is a very small line chart, drawn without axes or coordinates. It presents the general shape of the variation (typically over time) in a simple and highly condensed way."
+
+## Quick start
+
+* `ember install ember-cli-sparkline`
+
+The only required attribute is 'points'. This should be an array of objects with an 'x' and 'y' property. 'x' and 'y' should be numbers.
+
+Example:
+
+    data: Ember.A([
+      {
+        x: 1,
+        y: 5
+      },
+      {
+        x: 2,
+        y: 10
+      },
+      {
+        x: 3,
+        y: -20
+      }
+    ])
+
+You can now use the sparkline component {{spark-line points=data}} in templates.
+
+## Contributing
 
 * `git clone` this repository
 * `npm install`
@@ -17,9 +44,5 @@ An Ember Addon containing components for rendering spark line charts.
 
 * `ember test`
 * `ember test --server`
-
-## Building
-
-* `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
