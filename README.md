@@ -29,6 +29,8 @@ Example:
 
 You can now use the sparkline component {{ember-cli-sparkline points=data}} in templates.
 
+Warning: You need to give the sparkline a width and height. The dummy app applies width and height styles targetting the .ember-cli-sparkline css class that is present on the root element of the sparkline component.
+
 ## Contributing
 
 * `git clone` this repository
