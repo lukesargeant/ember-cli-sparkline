@@ -37,7 +37,9 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon sparkine chart"
+    "ember-addon",
+    "sparkline",
+    "chart"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3",
