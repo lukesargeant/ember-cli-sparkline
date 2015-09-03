@@ -1,0 +1,22 @@
+<h2 id="title">Ember-spark-line dummy app</h2>
+
+<table>
+  <thead>
+    <tr>
+      {{#each mocks as |mock|}}
+        <th>
+          {{mock.name}}
+        </th>
+      {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {{#each mocks as |mock|}}
+        <td>
+          {{spark-line points=mock.data class="mock-list_spark-line"}}
+        </td>
+      {{/each}}
+    </tr>
+  </tbody>
+</table>

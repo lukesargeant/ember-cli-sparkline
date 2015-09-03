@@ -1,0 +1,1 @@
+export { default } from 'ember-spark-line/components/spark-line/component';
