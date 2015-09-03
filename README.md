@@ -1,4 +1,4 @@
-# Ember-spark-line
+# Ember-cli-sparkline
 
 An Ember Addon containing components for rendering sparkline charts.
 
