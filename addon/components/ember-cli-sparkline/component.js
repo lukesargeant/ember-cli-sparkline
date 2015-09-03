@@ -6,7 +6,7 @@ import layout from './template';
 export default Ember.Component.extend({
   layout,
   tagName: 'svg',
-  classNames: ['spark-line'],
+  classNames: ['ember-cli-sparkline'],
   attributeBindings: ['viewBox', 'preserveAspectRatio'],
 
   /**

@@ -27,7 +27,7 @@ Example:
       }
     ])
 
-You can now use the sparkline component {{spark-line points=data}} in templates.
+You can now use the sparkline component {{ember-cli-sparkline points=data}} in templates.
 
 ## Contributing
 

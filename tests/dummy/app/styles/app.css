@@ -6,18 +6,18 @@ body {
 h2 {
   font-weight: normal;
 }
-.spark-line {
+.ember-cli-sparkline {
   box-sizing: border-box;
   width:100%;
   height:30px;
 }
-.spark-line_line {
+.ember-cli-sparkline_line {
   fill: none;
   stroke: #fff;
   stroke-width: 1px;
   stroke-linejoin: round;
 }
-.spark-line_area {
+.ember-cli-sparkline_area {
   fill: #444;
   stroke-width: 1px;
   stroke-linejoin: round;

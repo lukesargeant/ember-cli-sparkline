@@ -1,6 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 
-moduleForComponent('spark-line', 'Unit | Component | spark line', {
+moduleForComponent('ember-cli-sparkline', 'Unit | Component | sparkline', {
   // Specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar'],
   unit: true

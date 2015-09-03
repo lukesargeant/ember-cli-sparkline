@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-spark-line'
+  name: 'ember-cli-sparkline'
 };
