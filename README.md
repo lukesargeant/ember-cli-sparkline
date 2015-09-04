@@ -35,7 +35,7 @@ Warning: You need to give the sparkline a width and height. The dummy app applie
 
 Ember-cli-sparkline adds no styles/CSS to your project by default. The following hooks are available for styling with CSS:
 
-###.ember-cli-sparkline
+### .ember-cli-sparkline
 
 This is an SVG element. If you want the sparkline to fill its container, you could give the container position: relative; and then apply the following rule:
 
@@ -47,7 +47,7 @@ This is an SVG element. If you want the sparkline to fill its container, you cou
       left: 0;
     }
 
-###.ember-cli-sparkline_line
+### .ember-cli-sparkline_line
 
 This is an SVG path element that represents the line drawn by the data points. The following attributes are useful for styling the sparkline's line element:
 
@@ -57,13 +57,35 @@ This is an SVG path element that represents the line drawn by the data points. T
       stroke-linejoin: round;
     }
 
-###.ember-cli-sparkline_area
+### .ember-cli-sparkline_area
 
 This is an SVG path element representing the area beneath the data points. The following attributes are useful for styling the sparline's area element:
 
     .ember-cli-sparkline_area {
       fill: #444;
     }
+
+## API
+
+### points (Object[]: null)
+
+This should be an array of objects with an 'x' and 'y' property. 'x' and 'y' should be numbers.
+
+### xKey (String: 'x')
+
+The key to the x property in each data point.
+
+### yKey (String: 'x')
+
+The key to the y property in each data point.
+
+### showLine (Boolean: true)
+
+Whether to render a path representing the line along the data points.
+
+### showArea (Boolean: true)
+
+Whether to render a path representing the area beneath the data points.
 
 ## Contributing
 
