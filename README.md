@@ -31,6 +31,40 @@ You can now use the sparkline component {{ember-cli-sparkline points=data}} in t
 
 Warning: You need to give the sparkline a width and height. The dummy app applies width and height styles targetting the .ember-cli-sparkline css class that is present on the root element of the sparkline component.
 
+## Styling
+
+Ember-cli-sparkline adds no styles/CSS to your project by default. The following hooks are available for styling with CSS:
+
+###.ember-cli-sparkline
+
+This is an SVG element. If you want the sparkline to fill its container, you could give the container position: relative; and then apply the following rule:
+
+    .ember-cli-sparkline {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+###.ember-cli-sparkline_line
+
+This is an SVG path element that represents the line drawn by the data points. The following attributes are useful for styling the sparkline's line element:
+
+    .ember-cli-sparkline_line {
+      stroke: red;
+      stroke-width: 1px;
+      stroke-linejoin: round;
+    }
+
+###.ember-cli-sparkline_area
+
+This is an SVG path element representing the area beneath the data points. The following attributes are useful for styling the sparline's area element:
+
+    .ember-cli-sparkline_area {
+      fill: #444;
+    }
+
 ## Contributing
 
 * `git clone` this repository
