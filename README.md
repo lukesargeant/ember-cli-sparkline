@@ -1,4 +1,4 @@
-# Ember-cli-sparkline
+# Ember-cli-sparkline [![Circle CI](https://circleci.com/gh/lukesargeant/ember-cli-sparkline/tree/master.svg?style=svg)](https://circleci.com/gh/lukesargeant/ember-cli-sparkline/tree/master)
 
 "A sparkline is a very small line chart, drawn without axes or coordinates. It presents the general shape of the variation (typically over time) in a simple and highly condensed way."
 
