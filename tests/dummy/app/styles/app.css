@@ -1,11 +1,79 @@
 body {
-  background: #222;
+  padding: 0;
+  margin: 0;
+  background: #292833;
   color: white;
   font-family: Avenir, Arial;
 }
-h2 {
-  font-weight: normal;
+a {
+  color: #69BBFF;
+  text-decoration: none;
 }
+h2 {
+  font-weight: 300;
+  margin-top: 2.5em;
+}
+h3 {
+  font-weight: 500;
+  margin-top: 2em;
+}
+code {
+  background: #4A4A4A;
+  text-rendering: geometricPrecision;
+}
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.hero {
+  background: #E6F9FF;
+  text-align: center;
+  padding: 1em 0;
+  color: black;
+}
+.hero_title {
+  margin: 1.3em 0 .5em;
+  font-weight: 300;
+  font-size: 3em;
+}
+.hero_caption {
+  font-size: 1.1em;
+}
+.hero_buttons {
+  padding: 1em;
+}
+.hero_button {
+  display: inline-block;
+  background: crimson;
+  color: white;
+  text-decoration: none;
+  padding: .66em 2em;
+  margin: 0 .5em;
+}
+.hero_button:hover {
+  background: #FF3259;
+}
+.lead {
+  font-size: 1.3em;
+  text-align: center;
+  font-style: italic;
+  padding: .66em 0;
+}
+.highlight {
+  background: #4A4A4A;
+  padding: .1em 1.3em;
+  text-rendering: geometricPrecision;
+}
+.footer {
+  padding: 2em 0;
+  font-size: small;
+  color: #959595;
+}
+.footer > p {
+  margin: .5em 0;
+}
+
+/* Sparkline */
 .ember-cli-sparkline {
   box-sizing: border-box;
   width:100%;
