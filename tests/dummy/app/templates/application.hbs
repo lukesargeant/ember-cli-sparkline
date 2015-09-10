@@ -15,24 +15,18 @@
 
   <h2><a id="examples" href="#examples" aria-hidden="true">Examples</a></h2>
 
-  <table>
-    <thead>
-      <tr>
-        {{#each mocks as |mock|}}
+  <table class="example-table">
+    <tbody>
+      {{#each mocks as |mock|}}
+        <tr>
           <th>
             {{mock.name}}
           </th>
-        {{/each}}
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        {{#each mocks as |mock|}}
           <td>
             {{ember-cli-sparkline points=mock.data class="mock-list_spark-line"}}
           </td>
-        {{/each}}
-      </tr>
+        </tr>
+      {{/each}}
     </tbody>
   </table>
 

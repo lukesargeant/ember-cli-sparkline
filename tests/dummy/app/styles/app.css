@@ -72,12 +72,26 @@ code {
 .footer > p {
   margin: .5em 0;
 }
+.example-table {
+  width: 100%;
+}
+.example-table th {
+  text-align: left;
+  padding: 0 1em;
+}
+.example-table tr {
+  background: #164C61;
+}
+.example-table td {
+  width: 80%;
+}
 
 /* Sparkline */
 .ember-cli-sparkline {
   box-sizing: border-box;
-  width:100%;
-  height:30px;
+  height: 40px;
+  width: 100%;
+  display: block;
 }
 .ember-cli-sparkline_line {
   fill: none;
@@ -86,7 +100,7 @@ code {
   stroke-linejoin: round;
 }
 .ember-cli-sparkline_area {
-  fill: #444;
+  fill: rgba(0, 0, 0, 0.25);
   stroke-width: 1px;
   stroke-linejoin: round;
 }

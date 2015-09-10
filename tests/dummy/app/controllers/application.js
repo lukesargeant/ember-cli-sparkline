@@ -4,60 +4,38 @@ export default Ember.Controller.extend({
   
   mocks: Ember.A([
     Ember.Object.create({
-      name: 'Data 1',
-      data: Ember.A([
-        {
-          x: Date.now(),
-          y: 10
-        }
-      ])
+      name: 'EUR/USD',
+      data: Ember.A([])
     }),
     Ember.Object.create({
-      name: 'Data 2',
-      data: Ember.A([
-        {
-          x: Date.now(),
-          y: 10
-        }
-      ])
+      name: 'USD/JPY',
+      data: Ember.A([])
     }),
     Ember.Object.create({
-      name: 'Data 3',
-      data: Ember.A([
-        {
-          x: Date.now(),
-          y: 10
-        }
-      ])
+      name: 'GBP/USD',
+      data: Ember.A([])
     }),
     Ember.Object.create({
-      name: 'Data 4',
-      data: Ember.A([
-        {
-          x: Date.now(),
-          y: 10
-        }
-      ])
-    }),
-    Ember.Object.create({
-      name: 'Data 5',
-      data: Ember.A([
-        {
-          x: Date.now(),
-          y: 10
-        }
-      ])
+      name: 'USD/CHF',
+      data: Ember.A([])
     })
   ]),
   init() {
     this._super();
+    let now = Date.now();
+    for (let i = 0; i < 100; i++) {
+      this.addPoints(now - ((99 - i) * 2000));
+    }
     window.setInterval(this.addPoints.bind(this), 2000);
   },
-  addPoints() {
+  addPoints(x) {
     let mocks = this.get('mocks');
     mocks.forEach(function(mock) {
       let data = mock.get('data');
-      data.pushObject({x: Date.now(), y: Math.round(Math.random() * 50)});
+      data.pushObject({x: x || Date.now(), y: Math.round(Math.random() * 50)});
+      if (!x) {
+        data.shiftObject();
+      }
     });
   }
 });
