@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from './template';
+import layout from '../templates/ember-cli-sparkline';
 /**
  * Component that displays a 2D graph line, and/or its area.
  */
