@@ -100,7 +100,7 @@ export default Ember.Component.extend({
     let x = b.x;
     return `${x.min - xZero} ${-y.max} ${x.max - x.min} ${y.max - y.min}`;
   }),
-  
+
   /**
    * Path that draws a line for the dataset
    * @return {String}
