@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-sparkline",
-  "version": "0.1.5",
-  "description": "An Ember Addon containing components for rendering sparkline charts.",
+  "version": "0.1.6",
+  "description": "(Deprecated) An Ember Addon containing components for rendering SVG sparkline charts.",
   "directories": {
     "doc": "doc",
     "test": "tests"
