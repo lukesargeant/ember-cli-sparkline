@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from './template';
+import layout from '../templates/ember-cli-sparkline';
 /**
  * Component that displays a 2D graph line, and/or its area.
  */
@@ -100,7 +100,7 @@ export default Ember.Component.extend({
     let x = b.x;
     return `${x.min - xZero} ${-y.max} ${x.max - x.min} ${y.max - y.min}`;
   }),
-  
+
   /**
    * Path that draws a line for the dataset
    * @return {String}
